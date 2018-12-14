@@ -13,5 +13,6 @@ public class MainActivity extends AppCompatActivity {
         '王迪'
         'nihao'
         'hello word'
+         'digou'
     }
 }    
