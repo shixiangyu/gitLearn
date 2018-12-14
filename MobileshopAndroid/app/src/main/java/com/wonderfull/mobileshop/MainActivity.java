@@ -14,5 +14,6 @@ public class MainActivity extends AppCompatActivity {
         'nihao'
         'hello word'
          'digou'
+        'last once'
     }
 }    
