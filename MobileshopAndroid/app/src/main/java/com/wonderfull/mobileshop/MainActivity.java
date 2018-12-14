@@ -15,5 +15,6 @@ public class MainActivity extends AppCompatActivity {
         'hello word'
          'digou'
         'last once'
+         'again'
     }
 }    
