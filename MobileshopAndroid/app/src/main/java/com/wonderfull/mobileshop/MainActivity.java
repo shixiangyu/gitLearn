@@ -12,5 +12,6 @@ public class MainActivity extends AppCompatActivity {
         '史翔宇是个狗'
         '王迪'
         'nihao'
+        'hello word'
     }
 }    
