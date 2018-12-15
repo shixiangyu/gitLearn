@@ -16,5 +16,6 @@ public class MainActivity extends AppCompatActivity {
          'digou'
         'last once'
          'again'
+         '哈哈哈'
     }
 }    
