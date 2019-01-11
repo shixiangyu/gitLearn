@@ -8,12 +8,40 @@
   
 </head>
 <body>
-  <button id="box">点我啊</button>
+  <h2>hahahhah</h2>
+  <button id="box">按钮</button>
 </body>
 </html>
 <script>
-  var box = document.getElementById('box');
-  box.onclick = function(){
-      confirm('确定关闭吗？')
-  }
+  var str = [1,2,3,4,4,3,2,6,78];
+  var ary = [];
+  for(var i = 0;i<str.length;i++){
+    var cur = str[i]; 
+    if(ary.indexOf(cur) != -1){
+        str[i] = str[str.length-1];
+        str.length--;
+        i--;  
+    }
+   ary.push(cur)    
+}
+console.log(str.sort((a,b)=> b-a))
+
+//二分法 查找数组中的某一项
+function search(arr,value,start,end){
+    start = start || 0;
+    end = end || arr.length-1;
+    var midIndex = Math.floor((start+end)/2),
+        midValue = arr[midIndex];
+    if(midValue>value){
+        return search(arr,value,0,midIndex-1)
+    }else if(midValue<value){
+        return search(arr,value,midIndex+1,end)
+    }else{
+        alert(
+            "找到索引为"+midIndex
+        )
+    }
+}
+arr = str.sort((a,b)=> a- b) //[1, 2, 3, 4, 6, 78]
+search(arr,6,0,arr.length-1)
 </script>
